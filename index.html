@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Profile Page Starter</title>
+    <style>
+      @keyframes fadeInUpH1 {
+        0% {
+          opacity: 0;
+          transform: translateY(-300px);
+        }
+        70% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        70% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInUpA {
+        0% {
+          opacity: 0;
+          transform: translateX(-200px);
+        }
+        70% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUpP {
+        0% {
+          opacity: 0;
+          transform: translateY(-100px);
+        }
+        70% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUpInput {
+        0% {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        70% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h1 {
+        animation: fadeInUpH1 1.5s ease-out;
+      }
+
+      a {
+        animation: fadeInUpA 1.5s ease-out;
+      }
+
+      img {
+        animation: fade 3s ease-out;
+      }
+      p {
+        animation: fadeInUpP 1.5s ease-out;
+      }
+
+      input {
+        animation: fadeInUpInput 1.5s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

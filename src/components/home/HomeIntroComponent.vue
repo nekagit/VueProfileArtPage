@@ -37,9 +37,8 @@ const slides = [
   }
 ]
 </script>
-
 <template>
-  <div >
+  <div class="w-full h-screen flex items-center justify-center bg-gray-900">
     <vueper-slides
       fixed-height="80vh"
       autoplay
@@ -50,13 +49,16 @@ const slides = [
       :pause-on-touch="true"
       :duration="10000"
       fade
-      class="shadow-xl bg-black"
+      class="w-full h-full shadow-xl"
     >
-      <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" class="shadow-xl container">
+      <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" class="container relative">
         <template v-slot:content>
-          <component class="shadow-xl" :is="slide.component"></component>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <component :is="slide.component" class="p-4 bg-white rounded-md shadow-lg"></component>
+          </div>
         </template>
       </vueper-slide>
     </vueper-slides>
   </div>
 </template>
+  

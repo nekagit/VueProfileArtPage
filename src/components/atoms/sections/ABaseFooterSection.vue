@@ -2,11 +2,11 @@
   <div class="container">
     <div class="flex justify-around flex-col md:flex-row">
       <img
-        class="background-image2 hidden xl:flex"
+        class="background-image2 hidden xl:flex rounded-xl"
         :src="ImageHelper().introGallery[4]"
         alt="sponsors"
       />
-      <img class="background-image" :src="ImageHelper().introGallery[5]" alt="logo" />
+      <img class="background-image rounded-xl" :src="ImageHelper().introGallery[5]" alt="logo" />
     </div>
     <footer class="text-white font-medium relative p-3">
       <AMenuButton class="h-[30vh]" />

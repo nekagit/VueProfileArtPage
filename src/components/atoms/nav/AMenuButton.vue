@@ -6,9 +6,8 @@
     <ul>
       <li><RouterLink @click="closeMenu" to="/">Home</RouterLink></li>
       <li><RouterLink @click="closeMenu" to="/gallery">Gallery</RouterLink></li>
-      <li><RouterLink @click="closeMenu" to="/school">School</RouterLink></li>
+      <!-- <li><RouterLink @click="closeMenu" to="/school">School</RouterLink></li> -->
       <li><RouterLink @click="closeMenu" to="/sport">Sport</RouterLink></li>
-      <li><RouterLink @click="closeMenu" to="/anbi">ANBI</RouterLink></li>
       <li><RouterLink @click="closeMenu" to="/contact">Contact</RouterLink></li>
     </ul>
   </nav>

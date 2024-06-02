@@ -8,7 +8,7 @@
             :href="'#/' + title.toLowerCase()"
             @click.prevent="changeTab(title)"
           >
-            <h1>{{ title }}</h1>
+            <h2>{{ title }}</h2>
           </a>
         </li>
       </ul>

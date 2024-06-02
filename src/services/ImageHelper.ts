@@ -6,6 +6,9 @@ import ProfilePic from '@/assets/Nana/introGallery/profilePic.jpg'
 import logo from '@/assets/Nana/introGallery/logo.png'
 export default function ImageHelper() {
   const introGallery = [Intro1, Intro2, Intro3, Intro4, ProfilePic, logo]
+  const exhibitionGallery = [Intro1, Intro2, Intro3, Intro4, ProfilePic, logo]
+  const artworkGallery = [Intro1, Intro2, Intro3, Intro4, ProfilePic, logo]
+  const lifeGallery = [Intro1, Intro2, Intro3, Intro4, ProfilePic, logo]
   const artPage = [
     [Intro1, Intro2, Intro3, Intro4, ProfilePic, logo],
     [Intro1, Intro2, Intro3, Intro4, ProfilePic, logo],
@@ -14,5 +17,5 @@ export default function ImageHelper() {
     [Intro1, Intro2, Intro3, Intro4, ProfilePic, logo],
     [Intro1, Intro2, Intro3, Intro4, ProfilePic, logo]
   ]
-  return { introGallery, artPage }
+  return { introGallery, artPage, exhibitionGallery, artworkGallery, lifeGallery }
 }

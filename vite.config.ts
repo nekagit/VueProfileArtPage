@@ -6,6 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 import tailwind from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   css: {
@@ -18,5 +19,6 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  assetsInclude: ['**/*.JPG', '**/*.jpg'] // Add this line to include JPG files as assets
 })

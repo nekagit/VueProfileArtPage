@@ -41,7 +41,7 @@ const slides = [
 <template>
   <div >
     <vueper-slides
-      fixed-height="70vh"
+      fixed-height="80vh"
       autoplay
       :pause-on-hover="pauseOnHover"
       :arrows="!isMobile"
@@ -52,7 +52,7 @@ const slides = [
       fade
       class="shadow-xl bg-black"
     >
-      <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" class="shadow-xl">
+      <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" class="shadow-xl container">
         <template v-slot:content>
           <component class="shadow-xl" :is="slide.component"></component>
         </template>

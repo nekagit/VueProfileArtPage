@@ -1,5 +1,5 @@
 <template>
-  <img :src="imgSrc" @click="openModal" alt="sdf"  />
+  <img :src="imgSrc" @click="openModal" alt="sdf" />
 
   <div :id="modalId" class="modal h-screen" ref="modal" @click="closeModal">
     <div class="modal-content-wrapper" @click.stop>
@@ -42,6 +42,8 @@ onMounted(() => {
 
 <style scoped>
 img {
+  width: 100%;
+  height: auto;
   /* Ensure the image is clickable but not above the modal */
   z-index: 0;
 }

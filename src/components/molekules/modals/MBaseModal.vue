@@ -1,12 +1,13 @@
 <template>
   <div class="h-screen w-full" @click="openModal" />
-  <div :id="'myModal' + uniqueId" class="modal" @click="closeModal">
-    <div class="modal-content-wrapper" @click.stop>
-      <button class="close" @click="closeModal">&times;</button>
-      <img :id="'myImg'" alt="asdf" :src="imgSrc" class="h-screen" />
+  <div :id="'myModal' + uniqueId" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90 hidden" @click="closeModal">
+    <div class="relative max-w-full max-h-full flex items-center justify-center p-4" @click.stop>
+      <button class="absolute top-4 right-4 text-white text-4xl font-bold focus:outline-none" @click="closeModal">&times;</button>
+      <img :id="'myImg'" alt="asdf" :src="imgSrc" class="w-full h-auto max-h-screen object-cover animate-zoom" />
     </div>
   </div>
 </template>
+
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
@@ -34,7 +35,6 @@ onMounted(() => {
   modal.value = document.getElementById('myModal' + uniqueId.value)
 })
 </script>
-
 <style scoped>
 .modal {
   display: none;
@@ -44,7 +44,7 @@ onMounted(() => {
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -58,11 +58,11 @@ onMounted(() => {
   align-items: center;
 }
 
-.modal-content {
-  margin: auto;
-  display: block;
-  padding: 1rem;
-  width: 75%;
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 90vh; /* Limit the height for better responsiveness */
+  object-fit: cover;
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -98,8 +98,16 @@ onMounted(() => {
 
 /* Style for smaller screens */
 @media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
+  .modal-content-wrapper {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 1rem;
+  }
+
+  .close {
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
   }
 }
 </style>

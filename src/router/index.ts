@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/Nana/HomeView.vue'
 import SchoolView from '@/views/Nana/SchoolView.vue'
 import GalleryView from '@/views/Nana/GalleryView.vue'
-import SportView from '@/views/Nana/SportView.vue'
+import ArtView from '@/views/Nana/ArtView.vue'
 import ContactView from '@/views/Nana/ContactView.vue'
 import ANBIView from '@/views/Nana/ANBIView.vue'
   
@@ -18,7 +18,7 @@ const router = createRouter({
     {
       path: '/sport',
       name: 'sport',
-      component: SportView
+      component: ArtView
     },
     {
       path: '/school',

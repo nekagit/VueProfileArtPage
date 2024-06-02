@@ -36,11 +36,6 @@ const router = createRouter({
       component: ANBIView
     },
     {
-      path: '/pricing',
-      name: 'pricing',
-      component: SportView
-    },
-    {
       path: '/contact',
       name: 'contact',
       component: ContactView

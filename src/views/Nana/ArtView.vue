@@ -4,8 +4,8 @@
     :section-contents="sectionContent"
     :section-subtitle="sectionSubtitle"
     :section-titles="sectionTitles"
-    :cover-images="ImgHelper().sportPage"
-    :section-images="ImgHelper().sportPageSectionImages"
+    :cover-images="ImgHelper().introGallery"
+    :section-images="ImgHelper().artPage"
   />
 
   <AMenuButton class="h-[30vh]" />
@@ -15,19 +15,18 @@
 import { ref } from 'vue'
 import AMenuButton from '@/components/atoms/nav/AMenuButton.vue'
 import ImgHelper from '@/services/ImageHelper.ts'
-import ABaseHorizontalSection from '@/components/atoms/sections/ABaseHorizontalSection.vue'
 import ScrollFullPageSideIndex from '@/components/ScrollFullPageSideIndex.vue'
 
-const sideList = ['SOP Sport', 'Kros', 'Fudbal', 'Boks', 'Atletika', 'Plivanje']
+const sideList = ['Spring', 'Summer', 'Autmn', 'Winter', 'Abstract', 'Other']
 const sectionSubtitle = ref([
-  'We provide different occasions to participate in different sports',
-  'Kros is a run we organized many years until 2022 here in Rotterdam',
-  'This activity takes part 1 time a year',
-  'This activity takes part 1 time a year',
-  'This activity takes part 1 time a year',
-  'This activity takes part 1 time a year'
+  'Lush and vibrant, capturing the freshness and renewal of the season',
+  'Bright and lively, filled with warmth and the energy of long days',
+  'Rich and warm, showcasing the beauty of changing leaves and harvest time',
+  'Cool and serene, reflecting the tranquility and stark beauty of the snowy season',
+  'Dynamic and expressive, blending colors and forms to evoke deep emotions and thoughts',
+  'Diverse and experimental, exploring various themes and techniques beyond seasonal inspirations'
 ])
-const sectionTitles = ref(['SOP Sport', 'Kros trcanje', 'Fudbal', 'Boks', 'Atletika', 'Plivanje'])
+const sectionTitles = ref(['Spring', 'Summer', 'Autmn', 'Winter', 'Abstract', 'Other'])
 const sectionContent = ref([
   'Циљ рада наше компаније је да се деца кроз игру и спорт развијају позитивно физички, ментално и емоционално. Без притиска за успех и резултат по сваку цену, без ривалства и конкуренције. Ту смо за вас и трудимо се да подстакнемо младе, али и наш народ у целини, да се више посветимо нашој историји, култури, традицији и свим областима друштвеног развоја. Много тога су нам оставили наши преци и тога се не треба одрећи. Добродошли на званичну Фејсбук страницу и наше удружење „Пријатељство младих Србије“ Ротердам, које је званично основано 2016. године. а од 2002. године окупља децу и све генерације Срба који живе овде у Холандији кроз разне спортске активности. Спортске ватерполо клинике организоване су годинама, понекад уз подршку наших репрезентативаца Андрије Прлаиновића, Живке Гоцић и Милане Алексић, а у овом тиму нам помаже селектор женске репрезентације Холандије Арно Хавенга. Тако је и клиника за кошарку, одбојку, џудо, рукомет, кик бокс, пливање и атлетику.',
   'Иницијатор првог РТС-кроса у Холандији био је Ратко Николић, професор тадашње српске допунске школе „Вук Караџић“ у Ротердаму 2001. Проф. Николић је водио Крос до 2005. Подсећајући на успехе многобројне деце и њихове медаље на Тиме је, заједно са Миланом Вукасом, председником Удружења „СОП“, амбасадорком Ксенијом Миленковић и конзулом Бојаном Кљајић, ове године отворио 30. јубиларни крос РТС-а, у жељи да настави тако дугу традицију, године. Крос је одржан и у Дордрехту и први пут 2010. године под координацијом Милана Вукаса. Крст РТС-а по први пут има хуманитарни карактер и прикупљена донација намењена је АК „Прилужје“ са Косова и Метохије. На задовољство нашег удружења „СОП“ током хуманитарне трке „Трчимо једни за друге“ прикупљено је скоро 2.200 € које ће бити прослеђено преко кабинета директора за сарадњу са дијаспором Арно Гујона. 80. учесника од 2018. до 2005. године поносно су са осмехом на лицу донели мајице, заслужене медаље, разне поклоне, дипломе и лутрије, где су одбојкашке и фудбалске лопте, дрес Дамјана Достанића из ТСЦ „Бачка Топола“ и торту. на поклон је донирана донација за 30г РТС крос Јована Дукић.',

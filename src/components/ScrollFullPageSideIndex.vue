@@ -165,19 +165,19 @@ onBeforeRouteLeave((to, from, next) => {
 section {
   font-size: 40px;
   font-weight: 100;
-  background-color: rgb(33, 42, 88);
+  background-color: rgb(88, 69, 21);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
 
   $colors: (
-    rgb(33, 42, 88),
-    rgb(33, 42, 88),
-    rgb(33, 42, 88),
-    rgb(33, 42, 88),
-    rgb(33, 42, 88),
-    rgb(33, 42, 88)
+    rgb(88, 69, 21),
+    rgb(88, 69, 21),
+    rgb(88, 69, 21),
+    rgb(88, 69, 21),
+    rgb(88, 69, 21),
+    rgb(88, 69, 21)
   );
 
   @for $i from 1 through length($colors) {

@@ -4,8 +4,8 @@
     :section-contents="sectionContent"
     :section-subtitle="sectionSubtitle"
     :section-titles="sectionTitles"
-    :cover-images="ImgHelper().introGallery"
-    :section-images="ImgHelper().artPage"
+    :cover-images="ImageHelper().introGallery"
+    :section-images="ImageHelper().artPage"
   />
 
   <AMenuButton class="h-[30vh]" />
@@ -14,7 +14,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import AMenuButton from '@/components/atoms/nav/AMenuButton.vue'
-import ImgHelper from '@/services/ImageHelper.ts'
+import ImageHelper from '@/services/ImageHelper';
 import ScrollFullPageSideIndex from '@/components/ScrollFullPageSideIndex.vue'
 
 const sideList = ['Spring', 'Summer', 'Autmn', 'Winter', 'Abstract', 'Other']

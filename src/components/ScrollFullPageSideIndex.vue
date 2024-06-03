@@ -45,7 +45,7 @@
         :content="sectionContent"
         :sub-title="' '"
         :images="sectionImages[index]"
-        :img-src="coverImages[index]"
+        :img-src="coverImages[index].src"
       />
     </div>
   </section>
@@ -56,14 +56,14 @@ import { onBeforeRouteLeave } from 'vue-router'
 import InternetLines from '@/components/background/InternetLines.vue'
 import InternetRotateShine from '@/components/background/InternetMiddleRotateShine.vue'
 import OBaseImgModal from '@/components/organisms/OBaseImgModal.vue'
-
+import {Image} from "@/interfaces/Model"
 const props = defineProps<{
   sideList: string[]
   sectionContents: string[]
   sectionSubtitle: string[]
   sectionTitles: string[]
-  coverImages: string[]
-  sectionImages: string[][]
+  coverImages: Image[]
+  sectionImages: Image[][]
 }>()
 
 const activeIndex = ref(0)

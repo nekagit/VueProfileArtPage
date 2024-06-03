@@ -29,13 +29,13 @@ import { ref, onMounted } from 'vue';
 import ABaseImageCard from '@/components/atoms/img/ABaseImgCard.vue';
 import ABaseCardAnBorder from '@/components/molekules/cards/MBaseCardAnBorder.vue';
 import MBaseGallerySlider from '@/components/molekules/img/MBaseGallerySlider.vue';
-
+import {Image} from "@/interfaces/Model"
 defineProps<{
   title: string
   subTitle: string
   content: string
   imgSrc: string
-  images: string[]
+  images: Image[]
 }>()
 
 const uniqueId = ref(Math.random().toString(36).substr(2, 9))

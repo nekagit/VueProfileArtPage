@@ -30,7 +30,7 @@
     <div class="xs:mt-0 md:mx-8">
       <InternetRotateShine
         ref="rotateShine"
-        :class="{ 'animate': isIntersecting[index] }"
+        :class="{ animate: isIntersecting[index] }"
         class="hidden xl:flex ml-40 rotate-shine"
         :initial="{ opacity: 0, y: 100 }"
         :enter="enterAnimation"
@@ -56,7 +56,7 @@ import { onBeforeRouteLeave } from 'vue-router'
 import InternetLines from '@/components/background/InternetLines.vue'
 import InternetRotateShine from '@/components/background/InternetMiddleRotateShine.vue'
 import OBaseImgModal from '@/components/organisms/OBaseImgModal.vue'
-import {Image} from "@/interfaces/Model"
+import { Image } from '@/interfaces/Model'
 const props = defineProps<{
   sideList: string[]
   sectionContents: string[]
@@ -113,7 +113,7 @@ onMounted(() => {
 
   const observerCallback = (entries: IntersectionObserverEntry[]) => {
     entries.forEach((entry) => {
-      const index = rotateShine.value.findIndex(el => el === entry.target)
+      const index = rotateShine.value.findIndex((el) => el === entry.target)
       if (index !== -1) {
         isIntersecting.value[index] = entry.isIntersecting
       }
@@ -142,13 +142,13 @@ onBeforeRouteLeave((to, from, next) => {
 })
 </script>
 
-
 <style lang="scss" scoped>
-
 .rotate-shine {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 .animate {
@@ -289,5 +289,4 @@ section {
     }
   }
 }
-
 </style>

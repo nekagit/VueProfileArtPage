@@ -118,7 +118,7 @@ const toggleBook = () => {
   font-size: 32px;
   color: #92684f;
   text-align: center;
-  margin: 30px 0 44px 0;
+  margin: 40px 0 84px 0;
   text-shadow: 0 2px 4px rgba(41, 48, 58, 0.3);
 }
 .open-book .main {
@@ -544,6 +544,7 @@ const toggleBook = () => {
   margin: auto;
   text-align: center;
   padding: 10px 10px 5px 10px;
+  margin-bottom: 16px;
   z-index: 100px;
 }
 #opt:after {

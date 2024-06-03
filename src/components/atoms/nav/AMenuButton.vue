@@ -6,7 +6,7 @@
     <ul>
       <li><RouterLink @click="closeMenu" to="/">Home</RouterLink></li>
       <li><RouterLink @click="closeMenu" to="/gallery">Gallery</RouterLink></li>
-      <!-- <li><RouterLink @click="closeMenu" to="/school">School</RouterLink></li> -->
+      <li><RouterLink @click="closeMenu" to="/bio">Biography</RouterLink></li>
       <li><RouterLink @click="closeMenu" to="/sport">Artwork</RouterLink></li>
       <li><RouterLink @click="closeMenu" to="/contact">Contact</RouterLink></li>
     </ul>

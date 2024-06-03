@@ -3,7 +3,6 @@
     <h1 class="demo-title">Short Biography of Dragoslava Stankovic</h1>
     <div id="opt">
       <dl>
-        <dt>Console</dt>
         <dd @click="showView('view-cover')" :class="{ cur: currentView === 'view-cover' }">
           View Cover
         </dd>
@@ -251,7 +250,7 @@ const toggleBook = () => {
   transform: rotate3d(0, 1, 0, -180deg);
 }
 .title {
-  margin: 30px 0 75px 0;
+  margin: 30px 0 105px 0;
   height: 38px;
   font-size: 38px;
   padding: 1rem;

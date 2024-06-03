@@ -17,37 +17,59 @@
       </dl>
     </div>
 
-
     <div id="book" :class="currentView" class="mt-4">
       <div class="main">
         <div class="book-font">
           <div class="book-cover">
-            <h1 class="title">Wuthering Heights</h1>
-            <h2 class="author">Emily Bronte</h2>
-            <div class="publisher">Oxford University Press, USA</div>
+            <h2 class="title">Oduvek Povezana sa Umetnošću</h2>
+            <h3 class="author">Dragoslava Dragica Stankovic </h3>
+            <div class="publisher">Sabac, Srbija</div>
           </div>
           <div class="book-cover-back"></div>
         </div>
         <div class="book-page">
           <div id="page-1" class="page">
-            <h3>1 Mr Lockwood visits Wuthering Heights</h3>
+            <h3>Moja Biografija</h3>
             <p>
-              1801 I have just returned from a visit to my landlord—the solitary neighbour that I
-              shall be troubled with. This is certainly a beautiful country! In all England, I do
-              not believe that I could have fixed on a situation so completely removed from the stir
-              of society. A perfect misanthropist’s heaven; and Mr. Heathcliff and I are such a
-              suitable pair to divide the desolation between us. A capital fellow! He little
-              imagined how my heart warmed towards him when I beheld his black eyes withdraw so
-              suspiciously under their brows, as I rode up, and when his fingers sheltered
-              themselves, with a jealous resolution, still further in his waistcoat, as I announced
-              my name.
+              Dragoslava Dragica Stanu, renomirana modna kreatorka i slikarka, nosi u svom radu
+              tragove duboko ukorenjene ljubavi prema umetnosti, koju je nasledila od svog oca. Od
+              ranog detinjstva bila je obučena da svoje modele i fantazije prenosi na platno, da
+              vešto koristi sve delove i materijale, odražavajući njihovu lepotu kroz svoje
+              kreacije.
             </p>
-            <p>“Mr. Heathcliff!” I said.</p>
-            <p>A nod was the answer.</p>
             <p>
-              “Mr. Lockwood, your new tenant, sir. I do myself the honour of calling as soon as
-              possible after my arrival, to express the hope that I have not inconvenienced you by
-              my perseverance in soliciting the occupation of Thrushcross Grange”
+              Početkom 1970-ih godina, Dragica je otputovala u Nemačku, gde se posvetila slikanju i
+              oslikavanju delova odeće. Kombinovala je svilu sa drugim materijalima, stvarajući
+              unikatne umetničke komade.
+            </p>
+            <p>
+              Godine 1986, proširila je svoje stvaralaštvo i na slikarsko platno, otkrivajući novu
+              dimenziju svoje umetničke izražajnosti. Njena prva izložba bila je otvorena u banji
+              Oeynhausen, gde je provela šest nezaboravnih nedelja sa svojim mužem. Tokom tog
+              perioda, uspela je da organizuje dve izložbe, što je bio početak njenog umetničkog
+              puta koji je nastavio da se razvija širom Evrope i sveta.
+            </p>
+            <p>
+              Dragica je tokom svoje karijere dobila brojna priznanja i pohvale za svoje kreacije.
+              Među njima se posebno ističu Srebrna povelja na međunarodnoj izložbi u Vrnjačkoj Banji
+              i dve zlatne nagrade na međunarodnim izložbama u Vojvodini. Ove nagrade predstavljaju
+              njene prve velike uspehe u domovini.
+            </p>
+            <p>
+              Godine 2022, Dragica je nominovana među 60 najboljih slikara u New Yorku, a nagrade su
+              joj uručene 2023. godine. Njene samostalne izložbe održane su u mnogim prestižnim
+              mestima, uključujući Pariz (2014), Menhetn u New Yorku (2016), Amsterdam (2016), i
+              Miami (2017). Takođe je izlagala u Tokiju (2023), Barseloni, Madridu, Bazelu, Berlinu,
+              Londonu (Chelsea), kao i u Rumuniji, Mađarskoj, Italiji, Briselu i Kanadi.
+            </p>
+            <p>
+              Njeni radovi su bili izloženi i u Luvru u Parizu takodje i Kanu u francuskoj za vreme
+              filmskog festivala. Dragica koristi različite tehnike u svom radu, oslanjajući se na
+              svoje raspoloženje i inspiraciju. Njene inovativne ideje se ogledaju u svakom
+              umetničkom delu koje stvori. Do sada je imala preko 200 kolektivnih izložbi, dok je
+              broj samostalnih izložbi dostigao 40, uključujući i inostranstvo. Ova izuzetna
+              umetnica nastavlja da inspiriše i oduševljava publiku širom sveta svojim jedinstvenim
+              stilom i nepokolebljivom strašću prema umetnosti.
             </p>
           </div>
           <div class="page-number">- 1 -</div>
@@ -217,9 +239,10 @@ const toggleBook = () => {
   transform: rotate3d(0, 1, 0, -180deg);
 }
 .title {
-  margin: 70px 0 25px 0;
+  margin: 30px 0 75px 0;
   height: 38px;
   font-size: 38px;
+  padding: 1rem;
 }
 .author {
   height: 20px;
@@ -265,6 +288,7 @@ const toggleBook = () => {
   height: 500px;
   margin: 30px 40px;
   overflow: hidden;
+  /* overflow-y: scroll; */
 }
 .book-page h3 {
   font-size: 14px;
@@ -458,6 +482,7 @@ const toggleBook = () => {
   -o-transform: translate3d(0, 0, 25px) rotate3d(0, 1, 0, -160deg);
   transform: translate3d(0, 0, 25px) rotate3d(0, 1, 0, -160deg);
 }
+
 .open-book:hover .main {
   -webkit-transform: rotate3d(1, 1, 0, 15deg);
   -moz-transform: rotate3d(1, 1, 0, 15deg);
@@ -465,6 +490,7 @@ const toggleBook = () => {
   -o-transform: rotate3d(1, 1, 0, 15deg);
   transform: rotate3d(1, 1, 0, 15deg);
 }
+
 .view-rotate .main {
   -webkit-transition-duration: 5s;
   -moz-transition-duration: 5s;
@@ -495,7 +521,7 @@ const toggleBook = () => {
 #opt {
   width: 150px;
   line-height: 30px;
-  margin:auto;
+  margin: auto;
   text-align: center;
   padding: 10px 10px 5px 10px;
   z-index: 100px;

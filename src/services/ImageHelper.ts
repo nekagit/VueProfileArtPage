@@ -35,7 +35,7 @@ import other4 from '@/assets/Nana/otherGallery/4.jpg'
 import ProfilePic from '@/assets/Nana/introGallery/profilePic.jpg'
 import logo from '@/assets/Nana/introGallery/logo.png'
 export default function ImageHelper() {
-  const introGallery = [Intro1, Intro2, Intro3, Intro4, abstract1, logo]
+  const introGallery = [Intro1, Intro2, Intro3, Intro4, abstract1, spring2,summer1,winter1,abstract2]
   const exhibitionGallery = [Intro1, Intro2, Intro3, Intro4, ProfilePic, logo]
   const artworkGallery = [Intro1, Intro2, Intro3, Intro4, ProfilePic, logo]
   const lifeGallery = [Intro1, Intro2, Intro3, Intro4, ProfilePic, logo]

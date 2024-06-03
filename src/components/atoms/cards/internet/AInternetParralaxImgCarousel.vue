@@ -16,6 +16,7 @@
 
 <script setup lang="ts">
 import ImageHelper from '@/services/ImageHelper';
+import AMenuButton from '../../nav/AMenuButton.vue';
 import { ref, onMounted, nextTick } from 'vue';
 import { gsap } from 'gsap';
 

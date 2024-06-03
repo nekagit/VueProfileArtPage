@@ -1,4 +1,5 @@
 <template>
+  <h1 class="text-center">Welcome to StankovicArt</h1>
   <div class="stage" v-bind="$attrs">
     <div class="container">
       <div class="ring">
@@ -19,32 +20,30 @@ import ImageHelper from '@/services/ImageHelper'
 import AMenuButton from '../../nav/AMenuButton.vue'
 import { ref, onMounted, nextTick } from 'vue'
 import { gsap } from 'gsap'
-import Intro1 from '@/assets/Nana/introGallery/1.JPG'
+import Intro1 from '@/assets/Nana/introGallery/1.jpg'
 import Intro2 from '@/assets/Nana/introGallery/2.jpg'
 import Intro3 from '@/assets/Nana/introGallery/3.JPG'
 import Intro4 from '@/assets/Nana/introGallery/4.jpg'
-
-import spring2 from '@/assets/Nana/springGallery/2.JPG'
-
-import summer1 from '@/assets/Nana/summerGallery/1.jpg'
-
-import winter1 from '@/assets/Nana/winterGallery/1.JPG'
-
 import abstract1 from '@/assets/Nana/abstractGallery/1.jpg'
-import abstract2 from '@/assets/Nana/abstractGallery/2.jpg'
+import other5 from '@/assets/Nana/otherGallery/5.jpg'
+import other6 from '@/assets/Nana/otherGallery/6.jpg'
+import other7 from '@/assets/Nana/otherGallery/7.jpg'
+import other8 from '@/assets/Nana/otherGallery/8.jpg'
+import other13 from '@/assets/Nana/otherGallery/13.jpg'
 
 const images = ref([])
 
 const introGallery = [
   Intro1,
+  other8,
   Intro2,
   Intro3,
+  other5,
   Intro4,
   abstract1,
-  spring2,
-  summer1,
-  winter1,
-  abstract2
+  other6,
+  other7,
+  other13
 ]
 
 onMounted(async () => {

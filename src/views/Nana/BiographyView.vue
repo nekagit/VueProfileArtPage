@@ -250,9 +250,9 @@ const toggleBook = () => {
   transform: rotate3d(0, 1, 0, -180deg);
 }
 .title {
-  margin: 30px 0 105px 0;
-  height: 38px;
-  font-size: 38px;
+  margin: 40px 0 122px 0;
+  height: 40px;
+  font-size: 40px;
   padding: 1rem;
 }
 .author {

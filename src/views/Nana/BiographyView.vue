@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col p-4">
     <h1 class="demo-title">Short Biography of Dragoslava Stankovic</h1>
     <div id="opt">
       <dl>

@@ -61,7 +61,7 @@ function setupCarousel() {
     .set('.ring', { rotationY: 180, cursor: 'grab' })
     .set('.img', {
       rotateY: (i) => i * -36,
-      transformOrigin: '50% 50% 500px',
+      transformOrigin: '50% 50% 700px',
       z: -500,
       backgroundPosition: (i) => getBgPos(i),
       backfaceVisibility: 'hidden'
@@ -157,8 +157,8 @@ svg {
 
 .container {
   perspective: 2000px;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

@@ -15,7 +15,5 @@ onMounted(() => {
 
 <template>
   <AInternetParralaxImgCarousel />
-    <ABaseHorizontalSection class="charmFont" :content="'SOP -  Home'" />
-  <ABaseFooterSection />
 
 </template>

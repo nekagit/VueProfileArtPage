@@ -46,6 +46,7 @@ const introGallery = [
   winter1,
   abstract2
 ]
+
 onMounted(async () => {
   images.value = introGallery
   await nextTick() // Wait for the DOM to be fully updated

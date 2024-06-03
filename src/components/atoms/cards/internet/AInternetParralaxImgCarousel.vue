@@ -1,5 +1,5 @@
 <template>
- <div class="stage" v-bind="$attrs">
+  <div class="stage" v-bind="$attrs">
     <div class="container">
       <div class="ring">
         <div
@@ -97,8 +97,6 @@ function setupCarousel() {
 }
 </script>
 
-
-
 <style lang="scss" scoped>
 html, body, .stage, .ring, .img {
   width: 100%;
@@ -132,5 +130,10 @@ div, svg {
   background-position: center;
   border: none;
   outline: none;
+}
+
+.stage, .container, .ring, .img, .stage *:focus, .container *:focus, .ring *:focus, .img *:focus {
+  outline: none;
+  box-shadow: none;
 }
 </style>

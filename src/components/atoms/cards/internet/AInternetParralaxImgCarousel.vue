@@ -2,22 +2,16 @@
   <div class="stage">
     <div class="container">
       <div class="ring">
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
+        <div v-for="img in ImageHelper().introGallery" class="img"></div>
       </div>
     </div>
   </div>
+  <AMenuButton />
 </template>
 
 <script setup lang="ts">
+import ImageHelper from '@/services/ImageHelper';
+import AMenuButton from '../../nav/AMenuButton.vue';
 import { onMounted } from 'vue';
 import { gsap } from 'gsap';
 

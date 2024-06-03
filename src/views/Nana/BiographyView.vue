@@ -135,7 +135,8 @@ const toggleBook = () => {
   }
 }
 #book {
-  width: 420px;
+  max-width: 420px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   -webkit-transition-duration: 0.5s;
@@ -150,7 +151,8 @@ const toggleBook = () => {
   perspective: 2000px;
 }
 .main {
-  width: 420px;
+  max-width: 420px;
+  width: 100%;
   height: 560px;
   color: #92684f;
   position: relative;
@@ -166,7 +168,8 @@ const toggleBook = () => {
 }
 
 .book-font {
-  width: 420px;
+  max-width: 420px;
+  width: 100%;
   height: 560px;
   position: absolute;
   top: 0;
@@ -201,7 +204,8 @@ const toggleBook = () => {
   transform: translate3d(0, 0, 25px);
 }
 .book-cover {
-  width: 420px;
+  max-width: 420px;
+  width: 100%;
   height: 560px;
   overflow: hidden;
   position: absolute;
@@ -221,7 +225,8 @@ const toggleBook = () => {
   backface-visibility: hidden;
 }
 .book-cover-back {
-  width: 420px;
+  max-width: 420px;
+  width: 100%;
   height: 560px;
   position: absolute;
   top: 0;
@@ -262,7 +267,8 @@ const toggleBook = () => {
 }
 
 .book-page {
-  width: 415px;
+  width: 100%;
+  max-width: 415px;
   height: 550px;
   line-height: 20px;
   position: absolute;
@@ -322,7 +328,8 @@ const toggleBook = () => {
 }
 
 .book-back {
-  width: 420px;
+  max-width: 420px;
+  width: 100%;
   background: #29303a;
   position: absolute;
   top: 0;

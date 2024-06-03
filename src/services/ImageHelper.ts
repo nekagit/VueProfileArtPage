@@ -38,7 +38,8 @@ export default function ImageHelper() {
   const introGallery = [
     { src: Intro1, title: '#1' },
     { src: Intro2, title: '#1' },
-    { src: Intro3, title: '#1' },
+    { src: Intro3, title: '#1' },Intro1
+Intro1
     { src: Intro4, title: '#1' },
     { src: abstract1, title: '#1' },
     { src: spring2, title: '#1' },

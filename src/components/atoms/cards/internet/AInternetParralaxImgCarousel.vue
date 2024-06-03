@@ -35,18 +35,18 @@ import abstract2 from '@/assets/Nana/abstractGallery/2.jpg'
 
 const images = ref([])
 
+const introGallery = [
+  Intro1,
+  Intro2,
+  Intro3,
+  Intro4,
+  abstract1,
+  spring2,
+  summer1,
+  winter1,
+  abstract2
+]
 onMounted(async () => {
-  const introGallery = [
-    Intro1,
-    Intro2,
-    Intro3,
-    Intro4,
-    abstract1,
-    spring2,
-    summer1,
-    winter1,
-    abstract2
-  ]
   images.value = introGallery
   await nextTick() // Wait for the DOM to be fully updated
   setupCarousel()

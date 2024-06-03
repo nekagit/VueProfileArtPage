@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img :src="imgSrc" alt="" class="card-img rounded-3xl shadow-2xl z-max hover:opacity-50 ease-in-out duration-300">
+    <img :src="imgSrc" alt="" class="card-img rounded-3xl shadow-2xl z-max">
     <div class="card-content">
       <h1>{{ heading }}</h1>
       <p class="truncate">{{ text }}</p>

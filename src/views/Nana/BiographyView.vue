@@ -22,7 +22,7 @@
         <div class="book-font">
           <div class="book-cover">
             <h2 class="title">Oduvek Povezana sa Umetnošću</h2>
-            <h3 class="author">Dragoslava Dragica Stankovic </h3>
+            <h3 class="author">Dragoslava Dragica Stankovic</h3>
             <div class="publisher">Sabac, Srbija</div>
           </div>
           <div class="book-cover-back"></div>
@@ -62,6 +62,12 @@
               Miami (2017). Takođe je izlagala u Tokiju (2023), Barseloni, Madridu, Bazelu, Berlinu,
               Londonu (Chelsea), kao i u Rumuniji, Mađarskoj, Italiji, Briselu i Kanadi.
             </p>
+            <p></p>
+          </div>
+          <div class="page-number">- 1 -</div>
+        </div>
+        <div class="book-back">
+          <div class="description">
             <p>
               Njeni radovi su bili izloženi i u Luvru u Parizu takodje i Kanu u francuskoj za vreme
               filmskog festivala. Dragica koristi različite tehnike u svom radu, oslanjajući se na
@@ -71,18 +77,7 @@
               umetnica nastavlja da inspiriše i oduševljava publiku širom sveta svojim jedinstvenim
               stilom i nepokolebljivom strašću prema umetnosti.
             </p>
-          </div>
-          <div class="page-number">- 1 -</div>
-        </div>
-        <div class="book-back">
-          <div class="description">
-            <p>
-              "Ideal for the college survey course: judicious introduction plus just the right
-              admixture of explanatory notes (vital for American students' comprehension of dialect
-              words), up-to-date bibliography, and several other brief, indispensable supports to
-              well-informed reading."
-            </p>
-            <p class="txt-right">--Katherine Linehan, Oberlin College</p>
+            <p class="txt-right">Nenad, Dragoslava, ChatGPT</p>
           </div>
           <div class="isbn">
             <img src="http://www.bluesdream.com/case/css3/3d-book-showcase/images/isbn.png" />
@@ -126,6 +121,18 @@ const toggleBook = () => {
   text-align: center;
   margin: 30px 0 44px 0;
   text-shadow: 0 2px 4px rgba(41, 48, 58, 0.3);
+}
+.open-book .main {
+  animation: moveBookToCenter 1s forwards;
+}
+
+@keyframes moveBookToCenter {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 #book {
   width: 420px;
@@ -287,8 +294,15 @@ const toggleBook = () => {
 .page {
   height: 500px;
   margin: 30px 40px;
-  overflow: hidden;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
+}
+
+.page::-webkit-scrollbar {
+  width: 0px; /* This will hide the scrollbar */
+}
+
+.page {
+  scrollbar-width: none; /* This will hide the scrollbar */
 }
 .book-page h3 {
   font-size: 14px;

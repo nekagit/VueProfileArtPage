@@ -16,20 +16,19 @@
 </template>
 
 <script setup lang="ts">
-import ImageHelper from '@/services/ImageHelper'
-import AMenuButton from '../../nav/AMenuButton.vue'
-import { ref, onMounted, nextTick } from 'vue'
-import { gsap } from 'gsap'
-import Intro1 from '@/assets/Nana/introGallery/1.JPG'
+import abstract1 from '@/assets/Nana/abstractGallery/1.jpg'
+import Intro1 from '@/assets/Nana/introGallery/1.jpg'
 import Intro2 from '@/assets/Nana/introGallery/2.jpg'
 import Intro3 from '@/assets/Nana/introGallery/3.JPG'
 import Intro4 from '@/assets/Nana/introGallery/4.jpg'
-import abstract1 from '@/assets/Nana/abstractGallery/1.jpg'
+import other13 from '@/assets/Nana/otherGallery/13.jpg'
 import other5 from '@/assets/Nana/otherGallery/5.jpg'
 import other6 from '@/assets/Nana/otherGallery/6.jpg'
 import other7 from '@/assets/Nana/otherGallery/7.jpg'
 import other8 from '@/assets/Nana/otherGallery/8.jpg'
-import other13 from '@/assets/Nana/otherGallery/13.jpg'
+import { gsap } from 'gsap'
+import { nextTick, onMounted, ref } from 'vue'
+import AMenuButton from '../../nav/AMenuButton.vue'
 
 const images = ref([])
 

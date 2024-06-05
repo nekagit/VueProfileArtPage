@@ -16,6 +16,7 @@
 </template>
 
 <script setup lang="ts">
+import Autmn1 from '@/assets/Nana/autmnGallery/11.jpg'
 import abstract1 from '@/assets/Nana/abstractGallery/1.jpg'
 import Intro2 from '@/assets/Nana/introGallery/2.jpg'
 import Intro3 from '@/assets/Nana/introGallery/3.JPG'
@@ -31,7 +32,18 @@ import AMenuButton from '../../nav/AMenuButton.vue'
 
 const images = ref([])
 
-const introGallery = [other8, Intro2, Intro3, other5, Intro4, abstract1, other6, other7, other13]
+const introGallery = [
+  Autmn1,
+  other8,
+  Intro2,
+  Intro3,
+  other5,
+  Intro4,
+  abstract1,
+  other6,
+  other7,
+  other13
+]
 
 onMounted(async () => {
   images.value = introGallery
@@ -108,7 +120,7 @@ function setupCarousel() {
   function getBgPos(i) {
     const rotationY = gsap.getProperty('.ring', 'rotationY')
     const adjustedRotation = gsap.utils.wrap(0, 360, rotationY - 180 - i * 36)
-    const bgPosX = (adjustedRotation / 360) * 100 - 50 // Calculate X position
+    const bgPosX = (adjustedRotation / 360) * 100 - 30 // Calculate X position
     return `${bgPosX}% 0px` // Return the background position
   }
 }

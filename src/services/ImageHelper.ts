@@ -1,6 +1,7 @@
 import Intro2 from '@/assets/Nana/introGallery/2.jpg'
 import Intro3 from '@/assets/Nana/introGallery/3.JPG'
 import Intro4 from '@/assets/Nana/introGallery/4.jpg'
+import NanaProfil from '@/assets/Nana/introGallery/nanaProfil.png'
 
 import spring1 from '@/assets/Nana/springGallery/1.JPG'
 import spring2 from '@/assets/Nana/springGallery/2.JPG'
@@ -109,6 +110,7 @@ export default function ImageHelper() {
     otherGallery
   ]
   return {
+
     introGallery,
     artPage,
     exhibitionGallery,
@@ -119,6 +121,7 @@ export default function ImageHelper() {
     autmnGallery,
     winterGallery,
     abstractGallery,
-    otherGallery
+    otherGallery,
+    NanaProfil
   }
 }

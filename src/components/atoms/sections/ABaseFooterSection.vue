@@ -3,7 +3,7 @@
     <div class="flex justify-around flex-col md:flex-row">
       <img
         class="background-image2 hidden xl:flex rounded-xl"
-        :src="ImageHelper().introGallery[4].src"
+        :src="ImageHelper().NanaProfil"
         alt="sponsors"
       />
       <img class="background-image rounded-xl" :src="logo" alt="logo" />

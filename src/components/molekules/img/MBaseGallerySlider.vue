@@ -29,9 +29,10 @@
 import MBaseGallery from '@/components/molekules/img/MBaseGallery.vue'
 import ImageHelper from '@/services/ImageHelper'
 import { computed, defineProps, onMounted, ref } from 'vue'
+import { Image } from '@/interfaces/Model';
 interface Props {
   sliderTitles: string[]
-  images?: string[]
+  images?: Image[]
 }
 const props = defineProps<Props>()
 
@@ -56,6 +57,7 @@ onMounted(() => {
   }
 })
 </script>
+
 <style scoped>
 .wrap {
   margin-top: -10px;
@@ -68,10 +70,12 @@ ul.tabs {
   overflow: hidden;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Allow the list items to wrap to the next line */
 }
 
 ul.tabs li {
-  flex: 1;
+  flex: 1 1 auto; /* Allow flex items to grow and shrink */
+  min-width: 150px; /* Set a minimum width to ensure wrapping */
 }
 
 ul.tabs li a {

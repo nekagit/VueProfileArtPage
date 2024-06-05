@@ -5,7 +5,7 @@ import SchoolView from '@/views/Nana/SchoolView.vue'
 import GalleryView from '@/views/Nana/GalleryView.vue'
 import ArtView from '@/views/Nana/ArtView.vue'
 import ContactView from '@/views/Nana/ContactView.vue'
-import ANBIView from '@/views/Nana/ANBIView.vue'
+import BiographyView from '@/views/Nana/BiographyView.vue'
   
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,9 +31,9 @@ const router = createRouter({
       component: GalleryView
     },
     {
-      path: '/anbi',
-      name: 'anbi',
-      component: ANBIView
+      path: '/bio',
+      name: 'bio',
+      component: BiographyView
     },
     {
       path: '/contact',

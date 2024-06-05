@@ -5,10 +5,11 @@
   >
     <li
       v-for="img in images"
-      :key="img"
+      :key="img.title"
       class="sticky left-0 w-[min(50vw,350px)] inline-block text-center bg-[#16171f] text-[#9b9dad] pb-6 shadow-[0_-10px_30px_0_rgba(0,0,0,0.25)] ml-[-4px]"
     >
-      <img :src="img" @click="openModal(img)" alt="sadf" />
+      <img :src="img.src" @click="openModal(img.src)" alt="sadf" />
+      <p>{{img.title}}</p>
     </li>
   </ul>
   <div v-if="modalBool" :id="modalId" class="modal" ref="modal" @click="closeModal">
@@ -21,10 +22,11 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import ABaseImageCard from '@/components/atoms/img/ABaseImgCard.vue'
+import { Image } from '@/interfaces/Model';
 
 // Define props
 defineProps<{
-  images: string[]
+  images: Image[]
 }>()
 
 // Unique ID for the modal and image

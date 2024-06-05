@@ -76,14 +76,14 @@
               umetnica nastavlja da inspiriše i oduševljava publiku širom sveta svojim jedinstvenim
               stilom i nepokolebljivom strašću prema umetnosti.
             </p>
-            <p class="txt-right">Nenad, Dragoslava, ChatGPT</p>
+            <p class="txt-right">Dragoslava,Nenad, ChatGPT</p>
           </div>
           <div class="isbn">
             <img src="http://www.bluesdream.com/case/css3/3d-book-showcase/images/isbn.png" />
           </div>
         </div>
         <div class="book-bone">
-          <h2>Emily Bronte　Wuthering Heights</h2>
+          <h2>Oduvek Povezana sa Umetnošću</h2>
         </div>
         <div class="book-top"></div>
         <div class="book-right"></div>

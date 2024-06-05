@@ -17,7 +17,6 @@
 
 <script setup lang="ts">
 import abstract1 from '@/assets/Nana/abstractGallery/1.jpg'
-import Intro1 from '@/assets/Nana/introGallery/1.JPG'
 import Intro2 from '@/assets/Nana/introGallery/2.jpg'
 import Intro3 from '@/assets/Nana/introGallery/3.JPG'
 import Intro4 from '@/assets/Nana/introGallery/4.jpg'
@@ -32,18 +31,7 @@ import AMenuButton from '../../nav/AMenuButton.vue'
 
 const images = ref([])
 
-const introGallery = [
-  Intro1,
-  other8,
-  Intro2,
-  Intro3,
-  other5,
-  Intro4,
-  abstract1,
-  other6,
-  other7,
-  other13
-]
+const introGallery = [other8, Intro2, Intro3, other5, Intro4, abstract1, other6, other7, other13]
 
 onMounted(async () => {
   images.value = introGallery
@@ -118,31 +106,25 @@ function setupCarousel() {
   }
 
   function getBgPos(i) {
-    return (
-      100 -
-      (gsap.utils.wrap(0, 360, gsap.getProperty('.ring', 'rotationY') - 180 - i * 36) / 360) * 500 +
-      'px 0px'
-    )
+    const rotationY = gsap.getProperty('.ring', 'rotationY')
+    const adjustedRotation = gsap.utils.wrap(0, 360, rotationY - 180 - i * 36)
+    const bgPosX = (adjustedRotation / 360) * 100 - 50 // Calculate X position
+    return `${bgPosX}% 0px` // Return the background position
   }
 }
 </script>
 
 <style lang="scss" scoped>
-html,
-body,
 .stage,
 .ring,
 .img {
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; /* Add transform-style property */
   user-select: none;
   border: none;
   outline: none;
 }
-
-html,
-body,
 .stage {
   overflow: hidden;
   background: #000;
@@ -154,7 +136,7 @@ svg {
 }
 
 .container {
-  perspective: 2000px;
+  perspective: 2000px; /* Increase the perspective value */
   width: 400px;
   height: 500px;
   left: 50%;
@@ -163,8 +145,10 @@ svg {
 }
 
 .img {
+  width: 100%;
+  height: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: center; /* Update backgroundPosition property */
   border: none;
   outline: none;
 }

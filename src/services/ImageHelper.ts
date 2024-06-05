@@ -1,4 +1,3 @@
-import Intro1 from '@/assets/Nana/introGallery/1.JPG'
 import Intro2 from '@/assets/Nana/introGallery/2.jpg'
 import Intro3 from '@/assets/Nana/introGallery/3.JPG'
 import Intro4 from '@/assets/Nana/introGallery/4.jpg'
@@ -36,7 +35,6 @@ import logo from '@/assets/Nana/introGallery/logo.png'
 import ProfilePic from '@/assets/Nana/introGallery/profilePic.jpg'
 export default function ImageHelper() {
   const introGallery = [
-    { src: Intro1, title: '#1' },
     { src: Intro2, title: '#1' },
     { src: Intro3, title: '#1' },
     { src: Intro4, title: '#1' },
@@ -47,7 +45,6 @@ export default function ImageHelper() {
     { src: abstract2, title: '#1' }
   ]
   const exhibitionGallery = [
-    { src: Intro1, title: '#1' },
     { src: Intro2, title: '#1' },
     { src: Intro3, title: '#1' },
     { src: Intro4, title: '#1' },
@@ -55,7 +52,6 @@ export default function ImageHelper() {
     { src: logo, title: '#1' }
   ]
   const artworkGallery = [
-    { src: Intro1, title: '#1' },
     { src: Intro2, title: '#1' },
     { src: Intro3, title: '#1' },
     { src: Intro4, title: '#1' },
@@ -63,7 +59,6 @@ export default function ImageHelper() {
     { src: logo, title: '#1' }
   ]
   const lifeGallery = [
-    { src: Intro1, title: '#1' },
     { src: Intro2, title: '#1' },
     { src: Intro3, title: '#1' },
     { src: Intro4, title: '#1' },

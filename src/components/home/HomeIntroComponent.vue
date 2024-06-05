@@ -6,7 +6,6 @@ import 'vueperslides/dist/vueperslides.css'
 // Import the images statically
 import ImageHelper from '@/services/ImageHelper'
 
-import Intro01Component from './intro/Intro01Component.vue'
 import Intro02Component from './intro/Intro02Component.vue'
 import Intro03Component from './intro/Intro03Component.vue'
 import Intro04Component from './intro/Intro04Component.vue'
@@ -15,11 +14,6 @@ const pauseOnHover = ref(false)
 const isMobile = ref(false)
 
 const slides = [
-  {
-    title: 'Spotlees aus Dortmund',
-    image: ImageHelper().introGallery[0],
-    component: Intro01Component
-  },
   {
     title: 'Schadenfeststellung vom KFZ-Gutachter',
     image: ImageHelper().introGallery[1],

@@ -42,7 +42,8 @@
   text-align: center;
   color: #fff;
   position: relative;
-  margin: 0 32px;
+  margin: 0 auto;
+
 
   &:before {
     content: '';
@@ -83,9 +84,9 @@
 }
 
 .loading-text {
-  font-size: 15vw;
+  font-size: 10vw;
   line-height: 64px;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   margin-bottom: 32px;
   display: flex;
   justify-content: space-evenly;

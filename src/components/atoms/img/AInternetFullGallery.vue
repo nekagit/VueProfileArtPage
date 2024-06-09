@@ -57,15 +57,15 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
 html, body {
   height: 100%;
   width: 100%;
-  overflow: none; /* Prevent body scroll */
+  overflow: hidden; /* Prevent body scroll */
+  background-color: #f5f5f5; /* Light background color for the whole page */
 }
 
 .gallery {
-  background-color: rgb(217, 164, 41);
+  background-color: #ffd700; /* Brighter gallery background color */
   width: 100%;
   height: 100%;
   overflow: auto; /* Allow scroll within gallery */
@@ -90,15 +90,13 @@ html, body {
   transition: all 400ms;
   cursor: pointer;
   position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow for 3D effect */
+  border-radius: 10px; /* Rounded corners for a smoother look */
 }
 
-.container:hover .img {
-  filter: grayscale(100%) opacity(24%);
-  transition: all 400ms;
-}
-
-.container .img:hover {
-  filter: grayscale(0%) opacity(100%);
+.img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
   transition: all 400ms;
 }
 
@@ -153,6 +151,8 @@ html, body {
   object-fit: cover;
   animation-name: zoom;
   animation-duration: 0.6s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for modal image */
+  border-radius: 10px; /* Rounded corners for modal image */
 }
 
 @keyframes zoom {

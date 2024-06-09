@@ -7,7 +7,7 @@
         class="img"
         :class="`box-${index + 1}`"
         :data-text="'#' + (index + 1)"
-        :style="`--image: url(${image.src})`"
+        :style="{ '--image': `url(${image.src})` }"
         @click="openModal(index)"
       ></div>
       <div
@@ -57,6 +57,13 @@ onMounted(() => {
 </script>
 
 <style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -67,8 +74,12 @@ html, body {
 .gallery {
   background-color: #ffd700; /* Brighter gallery background color */
   width: 100%;
-  height: 100%;
-  overflow: auto; /* Allow scroll within gallery */
+  height: 100vh;
+  overflow-y: auto; /* Allow vertical scroll within gallery */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0; /* Padding for gallery */
 }
 
 .container {
@@ -78,7 +89,6 @@ html, body {
   width: 90%;
   max-width: 1450px;
   margin: 0 auto;
-  padding: 2rem 0;
   transition: all 400ms;
 }
 
@@ -86,18 +96,19 @@ html, body {
   background: var(--image) center center no-repeat;
   background-size: contain;
   width: 100%;
-  padding-top: 60.83%; /* Aspect ratio 1450 / 882 */
+  padding: 1rem; /* Padding for image card */
+  background-color: #ffd700; /* Same background color as gallery */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow for 3D effect */
   transition: all 400ms;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow for 3D effect */
-  border-radius: 10px; /* Rounded corners for a smoother look */
 }
 
-.img:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
-  transform: translateY(-5px); /* Slight lift effect on hover */
-  transition: all 400ms;
+.img::before {
+  content: '';
+  display: block;
+  padding-top: 60.83%; /* Aspect ratio 1450 / 882 */
 }
 
 .img::after {
@@ -114,6 +125,12 @@ html, body {
   bottom: -50px;
   opacity: 0;
   transition: all 600ms;
+}
+
+.img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  transition: all 400ms;
 }
 
 .img:hover::after {

@@ -1,7 +1,7 @@
 import Intro2 from '@/assets/Nana/introGallery/2.jpg'
 import Intro3 from '@/assets/Nana/introGallery/3.JPG'
 import Intro4 from '@/assets/Nana/introGallery/4.jpg'
-import NanaProfil from '@/assets/Nana/introGallery/nanaProfil.png'
+import NanaProfil from '@/assets/Nana/introGallery/WhatsApp Bild 2024-06-08 um 11.57.53_3f6ca3e5.jpg'
 
 import spring1 from '@/assets/Nana/springGallery/1.JPG'
 import spring2 from '@/assets/Nana/springGallery/2.JPG'

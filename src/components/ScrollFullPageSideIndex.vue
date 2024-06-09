@@ -27,7 +27,7 @@
     class="section xl:p-40 xl:m-40 h-screen flex justify-center items-center bg-gray-800 text-4xl font-light"
     :id="'section' + (index + 1)"
   >
-    <div class="xs:mt-0 md:mx-8">
+    <div class="mt-96 ">
       <InternetRotateShine
         ref="rotateShine"
         :class="{ animate: isIntersecting[index] }"
@@ -39,14 +39,17 @@
         :delay="100"
         :duration="1200"
       />
-      <OBaseImgModal
-        :key="index"
-        :title="sectionTitles[index]"
-        :content="sectionContent"
-        :sub-title="' '"
-        :images="sectionImages[index]"
-        :img-src="coverImages[index].src"
-      />
+      <div class="mt-40">
+
+        <OBaseImgModal
+      :key="index"
+    :title="sectionTitles[index]"
+  :content="sectionContent"
+:sub-title="' '"
+:images="sectionImages[index]"
+:img-src="coverImages[index].src"
+/>
+</div>
     </div>
   </section>
 </template>

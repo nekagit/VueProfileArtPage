@@ -1,6 +1,6 @@
 <template>
   <div class="loadingBody">
-    <div class="loading-container">
+    <div class="loading-container grid place-content-center">
       <div class="loading-text">
         <span>D</span>
         <span>R</span>
@@ -11,7 +11,6 @@
         <span>A</span>
       </div>
     </div>
-  
   </div>
 </template>
 
@@ -43,7 +42,6 @@
   color: #fff;
   position: relative;
   margin: 0 auto;
-
 
   &:before {
     content: '';

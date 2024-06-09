@@ -57,25 +57,9 @@ onMounted(() => {
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden; /* Prevent body scroll */
-  background-color: #f5f5f5; /* Light background color for the whole page */
-}
 
 .gallery {
-  background-color: #ffd700; /* Brighter gallery background color */
-  width: 100%;
-  height: 100vh;
-  overflow-y: auto; /* Allow vertical scroll within gallery */
+  overflow-y: hidden; /* Allow vertical scroll within gallery */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +81,6 @@ html, body {
   background-size: contain;
   width: 100%;
   padding: 1rem; /* Padding for image card */
-  background-color: #ffd700; /* Same background color as gallery */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow for 3D effect */
   transition: all 400ms;

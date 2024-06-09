@@ -233,12 +233,11 @@ export default function ImageHelper() {
     { src: logo, title: '#1' }
   ]
   const springGallery = [
+    { src: Nr34, title: '#34' },
     { src: Nr1, title: '#1' },
     { src: Nr26, title: '#26' },
     { src: Nr29, title: '#29' },
     { src: Nr30, title: '#30' },
-    { src: Nr30, title: '#30' },
-    { src: Nr34, title: '#34' },
   ]
   const summerGallery = [
     { src: Nr4, title: '#4' },

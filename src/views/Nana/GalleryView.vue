@@ -12,7 +12,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <MBaseGallerySlider :slider-titles="['Exhibition', 'Artwork', 'Life']" class="mt-10" />
+  <MBaseGallerySlider :slider-titles="['Exhibition', 'Life']" class="mt-10" />
   <MBaseGallerySlider :slider-titles="['Spring', 'Summer', 'Autmn', 'Winter', 'Abstract', 'Other']" class="mt-10" />
   <ABaseHorizontalSection class="charmFont" :content="'SOP -  Gallery'" />
   <ABaseFooterSection />

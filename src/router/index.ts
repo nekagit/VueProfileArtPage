@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import HomeView from '../views/Nana/HomeView.vue'
 import SchoolView from '@/views/Nana/SchoolView.vue'
+import CompleteGalleryView from "@/views/Nana/CompleteGalleryView.vue"
 import GalleryView from '@/views/Nana/GalleryView.vue'
 import ArtView from '@/views/Nana/ArtView.vue'
 import ContactView from '@/views/Nana/ContactView.vue'
@@ -29,6 +30,11 @@ const router = createRouter({
       path: '/gallery',
       name: 'gallery',
       component: GalleryView
+    },
+    {
+      path: '/artworks',
+      name: 'artworks',
+      component: CompleteGalleryView
     },
     {
       path: '/bio',

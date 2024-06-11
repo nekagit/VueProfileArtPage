@@ -173,12 +173,12 @@ section {
   z-index: 1;
 
   $colors: (
-    rgb(88, 69, 21),
-    rgb(88, 69, 21),
-    rgb(88, 69, 21),
-    rgb(88, 69, 21),
-    rgb(88, 69, 21),
-    rgb(88, 69, 21)
+    rgb(88, 33, 21),
+    rgb(88, 33, 21),
+    rgb(88, 33, 21),
+    rgb(88, 33, 21),
+    rgb(88, 33, 21),
+    rgb(88, 33, 21)
   );
 
   @for $i from 1 through length($colors) {

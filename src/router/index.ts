@@ -17,8 +17,8 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/sport',
-      name: 'sport',
+      path: '/overview',
+      name: 'overview',
       component: ArtView
     },
     {

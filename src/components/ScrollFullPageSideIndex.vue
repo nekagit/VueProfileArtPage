@@ -27,7 +27,7 @@
     class="section xl:p-40 xl:m-40 h-screen flex justify-center items-center bg-gray-800 text-4xl font-light"
     :id="'section' + (index + 1)"
   >
-    <div class="mt-96 ">
+    <div class="mt-96">
       <!-- <InternetRotateShine
         ref="rotateShine"
         :class="{ animate: isIntersecting[index] }"
@@ -40,16 +40,15 @@
         :duration="1200"
       /> -->
       <div class="mt-40">
-
         <OBaseImgModal
-      :key="index"
-    :title="sectionTitles[index]"
-  :content="sectionContent"
-:sub-title="' '"
-:images="sectionImages[index]"
-:img-src="coverImages[index].src"
-/>
-</div>
+          :key="index"
+          :title="sectionTitles[index]"
+          :content="sectionContent"
+          :sub-title="' '"
+          :images="sectionImages[index]"
+          :img-src="coverImages[index].src"
+        />
+      </div>
     </div>
   </section>
 </template>
@@ -168,7 +167,6 @@ onBeforeRouteLeave((to, from, next) => {
 section {
   font-size: 40px;
   font-weight: 100;
-  background-color: rgb(88, 69, 21);
   display: flex;
   justify-content: center;
   align-items: center;

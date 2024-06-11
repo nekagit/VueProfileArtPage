@@ -28,7 +28,7 @@
     :id="'section' + (index + 1)"
   >
     <div class="mt-96 ">
-      <InternetRotateShine
+      <!-- <InternetRotateShine
         ref="rotateShine"
         :class="{ animate: isIntersecting[index] }"
         class="hidden xl:flex ml-40 rotate-shine"
@@ -38,7 +38,7 @@
         :hovered="{ scale: 1.2 }"
         :delay="100"
         :duration="1200"
-      />
+      /> -->
       <div class="mt-40">
 
         <OBaseImgModal

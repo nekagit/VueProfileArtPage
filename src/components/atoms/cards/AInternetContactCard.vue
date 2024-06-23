@@ -100,10 +100,10 @@ const sendEmail = () => {
     message: form.value.message,
   },'4IhxKrDphUVEHFQeg')
   .then((response) => {
-    console.log('Email sent successfully!', response.status, response.text)
+    alert('Email sent successfully!', response.status, response.text)
   })
   .catch((error) => {
-    console.error('Error sending email:', error)
+    alert('Error sending email:', error)
   })
 }
 </script>

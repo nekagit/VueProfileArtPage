@@ -98,6 +98,107 @@ import Nr100 from '@/assets/Nana/sellingGallery/100.jpg'
 import Nr101 from '@/assets/Nana/sellingGallery/101.jpg'
 import Nr102 from '@/assets/Nana/sellingGallery/102.jpg'
 
+import ZNr1 from '@/assets/Nana/zivotGallery/1.jpg'
+import ZNr2 from '@/assets/Nana/zivotGallery/2.jpg'
+import ZNr3 from '@/assets/Nana/zivotGallery/3.jpg'
+import ZNr4 from '@/assets/Nana/zivotGallery/4.jpg'
+import ZNr5 from '@/assets/Nana/zivotGallery/5.jpg'
+import ZNr6 from '@/assets/Nana/zivotGallery/6.jpg'
+import ZNr7 from '@/assets/Nana/zivotGallery/7.jpg'
+import ZNr8 from '@/assets/Nana/zivotGallery/8.jpg'
+import ZNr9 from '@/assets/Nana/zivotGallery/9.jpg'
+import ZNr10 from '@/assets/Nana/zivotGallery/10.jpg'
+import ZNr11 from '@/assets/Nana/zivotGallery/11.jpg'
+import ZNr12 from '@/assets/Nana/zivotGallery/12.jpg'
+import ZNr14 from '@/assets/Nana/zivotGallery/14.jpg'
+import ZNr13 from '@/assets/Nana/zivotGallery/13.jpg'
+import ZNr15 from '@/assets/Nana/zivotGallery/15.jpg'
+import ZNr16 from '@/assets/Nana/zivotGallery/16.jpg'
+import ZNr17 from '@/assets/Nana/zivotGallery/17.jpg'
+import ZNr18 from '@/assets/Nana/zivotGallery/18.jpg'
+import ZNr19 from '@/assets/Nana/zivotGallery/19.jpg'
+import ZNr20 from '@/assets/Nana/zivotGallery/20.jpg'
+import ZNr21 from '@/assets/Nana/zivotGallery/21.jpg'
+import ZNr22 from '@/assets/Nana/zivotGallery/22.jpg'
+import ZNr23 from '@/assets/Nana/zivotGallery/23.jpg'
+import ZNr24 from '@/assets/Nana/zivotGallery/24.jpg'
+import ZNr25 from '@/assets/Nana/zivotGallery/25.jpg'
+import ZNr26 from '@/assets/Nana/zivotGallery/26.jpg'
+import ZNr27 from '@/assets/Nana/zivotGallery/27.jpg'
+import ZNr28 from '@/assets/Nana/zivotGallery/28.jpg'
+import ZNr29 from '@/assets/Nana/zivotGallery/29.jpg'
+import ZNr30 from '@/assets/Nana/zivotGallery/30.jpg'
+import ZNr31 from '@/assets/Nana/zivotGallery/31.jpg'
+import ZNr32 from '@/assets/Nana/zivotGallery/32.jpg'
+import ZNr33 from '@/assets/Nana/zivotGallery/33.jpg'
+import ZNr34 from '@/assets/Nana/zivotGallery/34.jpg'
+import ZNr36 from '@/assets/Nana/zivotGallery/36.jpg'
+import ZNr37 from '@/assets/Nana/zivotGallery/37.jpg'
+import ZNr38 from '@/assets/Nana/zivotGallery/38.jpg'
+import ZNr39 from '@/assets/Nana/zivotGallery/39.jpg'
+import ZNr40 from '@/assets/Nana/zivotGallery/40.jpg'
+import ZNr41 from '@/assets/Nana/zivotGallery/41.jpg'
+import ZNr42 from '@/assets/Nana/zivotGallery/42.jpg'
+import ZNr43 from '@/assets/Nana/zivotGallery/43.jpg'
+import ZNr44 from '@/assets/Nana/zivotGallery/44.jpg'
+import ZNr45 from '@/assets/Nana/zivotGallery/45.jpg'
+import ZNr46 from '@/assets/Nana/zivotGallery/46.jpg'
+import ZNr47 from '@/assets/Nana/zivotGallery/47.jpg'
+import ZNr48 from '@/assets/Nana/zivotGallery/48.jpg'
+import ZNr49 from '@/assets/Nana/zivotGallery/49.jpg'
+import ZNr50 from '@/assets/Nana/zivotGallery/50.jpg'
+import ZNr51 from '@/assets/Nana/zivotGallery/51.jpg'
+import ZNr52 from '@/assets/Nana/zivotGallery/52.jpg'
+import ZNr53 from '@/assets/Nana/zivotGallery/53.jpg'
+import ZNr54 from '@/assets/Nana/zivotGallery/54.jpg'
+import ZNr55 from '@/assets/Nana/zivotGallery/55.jpg'
+import ZNr56 from '@/assets/Nana/zivotGallery/56.jpg'
+import ZNr57 from '@/assets/Nana/zivotGallery/57.jpg'
+import ZNr58 from '@/assets/Nana/zivotGallery/58.jpg'
+import ZNr59 from '@/assets/Nana/zivotGallery/59.jpg'
+import ZNr60 from '@/assets/Nana/zivotGallery/60.jpg'
+import ZNr61 from '@/assets/Nana/zivotGallery/61.jpg'
+import ZNr62 from '@/assets/Nana/zivotGallery/62.jpg'
+import ZNr63 from '@/assets/Nana/zivotGallery/63.jpg'
+import ZNr66 from '@/assets/Nana/zivotGallery/66.jpg'
+import ZNr67 from '@/assets/Nana/zivotGallery/67.jpg'
+import ZNr68 from '@/assets/Nana/zivotGallery/68.jpg'
+import ZNr69 from '@/assets/Nana/zivotGallery/69.jpg'
+import ZNr70 from '@/assets/Nana/zivotGallery/70.jpg'
+import ZNr71 from '@/assets/Nana/zivotGallery/71.jpg'
+import ZNr72 from '@/assets/Nana/zivotGallery/72.jpg'
+import ZNr73 from '@/assets/Nana/zivotGallery/73.jpg'
+import ZNr74 from '@/assets/Nana/zivotGallery/74.jpg'
+import ZNr75 from '@/assets/Nana/zivotGallery/75.jpg'
+import ZNr76 from '@/assets/Nana/zivotGallery/76.jpg'
+import ZNr77 from '@/assets/Nana/zivotGallery/77.jpg'
+import ZNr78 from '@/assets/Nana/zivotGallery/78.jpg'
+import ZNr79 from '@/assets/Nana/zivotGallery/79.jpg'
+import ZNr80 from '@/assets/Nana/zivotGallery/80.jpg'
+import ZNr81 from '@/assets/Nana/zivotGallery/81.jpg'
+import ZNr82 from '@/assets/Nana/zivotGallery/82.jpg'
+import ZNr83 from '@/assets/Nana/zivotGallery/83.jpg'
+import ZNr84 from '@/assets/Nana/zivotGallery/84.jpg'
+import ZNr85 from '@/assets/Nana/zivotGallery/85.jpg'
+import ZNr86 from '@/assets/Nana/zivotGallery/86.jpg'
+import ZNr87 from '@/assets/Nana/zivotGallery/87.jpg'
+import ZNr88 from '@/assets/Nana/zivotGallery/88.jpg'
+import ZNr89 from '@/assets/Nana/zivotGallery/89.jpg'
+import ZNr90 from '@/assets/Nana/zivotGallery/90.jpg'
+import ZNr91 from '@/assets/Nana/zivotGallery/91.jpg'
+import ZNr92 from '@/assets/Nana/zivotGallery/92.jpg'
+import ZNr93 from '@/assets/Nana/zivotGallery/93.jpg'
+import ZNr94 from '@/assets/Nana/zivotGallery/94.jpg'
+import ZNr95 from '@/assets/Nana/zivotGallery/95.jpg'
+import ZNr96 from '@/assets/Nana/zivotGallery/96.jpg'
+import ZNr97 from '@/assets/Nana/zivotGallery/97.jpg'
+import ZNr98 from '@/assets/Nana/zivotGallery/98.jpg'
+import ZNr99 from '@/assets/Nana/zivotGallery/99.jpg'
+import ZNr100 from '@/assets/Nana/zivotGallery/100.jpg'
+import ZNr101 from '@/assets/Nana/zivotGallery/101.jpg'
+import ZNr102 from '@/assets/Nana/zivotGallery/102.jpg'
+
+
 import Intro2 from '@/assets/Nana/introGallery/2.jpg'
 import Intro3 from '@/assets/Nana/introGallery/3.JPG'
 import Intro4 from '@/assets/Nana/introGallery/4.jpg'
@@ -208,6 +309,109 @@ export default function ImageHelper() {
     { src: Nr102, title: '#102' }
 ];
 
+ const zivotGallery = [
+   { src: ZNr1, title: '#1' },
+   { src: ZNr2, title: '#2' },
+   { src: ZNr3, title: '#3' },
+   { src: ZNr4, title: '#4' },
+   { src: ZNr5, title: '#5' },
+   { src: ZNr6, title: '#6' },
+   { src: ZNr7, title: '#7' },
+   { src: ZNr8, title: '#8' },
+   { src: ZNr9, title: '#9' },
+   { src: ZNr10, title: '#10' },
+   { src: ZNr11, title: '#11' },
+   { src: ZNr12, title: '#12' },
+   { src: ZNr13, title: '#13' },
+   { src: ZNr14, title: '#14' },
+   { src: ZNr15, title: '#15' },
+   { src: ZNr16, title: '#16' },
+   { src: ZNr17, title: '#17' },
+   { src: ZNr18, title: '#18' },
+   { src: ZNr19, title: '#19' },
+   { src: ZNr20, title: '#20' },
+   { src: ZNr21, title: '#21' },
+   { src: ZNr22, title: '#22' },
+   { src: ZNr23, title: '#23' },
+   { src: ZNr24, title: '#24' },
+   { src: ZNr25, title: '#25' },
+   { src: ZNr26, title: '#26' },
+   { src: ZNr27, title: '#27' },
+   { src: ZNr28, title: '#28' },
+   { src: ZNr29, title: '#29' },
+   { src: ZNr30, title: '#30' },
+   { src: ZNr31, title: '#31' },
+   { src: ZNr32, title: '#32' },
+   { src: ZNr33, title: '#33' },
+   { src: ZNr34, title: '#34' },
+   { src: ZNr36, title: '#36' },
+   { src: ZNr37, title: '#37' },
+   { src: ZNr38, title: '#38' },
+   { src: ZNr39, title: '#39' },
+   { src: ZNr40, title: '#40' },
+   { src: ZNr41, title: '#41' },
+   { src: ZNr42, title: '#42' },
+   { src: ZNr43, title: '#43' },
+   { src: ZNr44, title: '#44' },
+   { src: ZNr45, title: '#45' },
+   { src: ZNr46, title: '#46' },
+   { src: ZNr47, title: '#47' },
+   { src: ZNr48, title: '#48' },
+   { src: ZNr49, title: '#49' },
+   { src: ZNr50, title: '#50' },
+   { src: ZNr51, title: '#51' },
+   { src: ZNr52, title: '#52' },
+   { src: ZNr53, title: '#53' },
+   { src: ZNr54, title: '#54' },
+   { src: ZNr55, title: '#55' },
+   { src: ZNr56, title: '#56' },
+   { src: ZNr57, title: '#57' },
+   { src: ZNr58, title: '#58' },
+   { src: ZNr59, title: '#59' },
+   { src: ZNr60, title: '#60' },
+   { src: ZNr61, title: '#61' },
+   { src: ZNr62, title: '#62' },
+   { src: ZNr63, title: '#63' },
+   { src: ZNr66, title: '#66' },
+   { src: ZNr67, title: '#67' },
+   { src: ZNr68, title: '#68' },
+   { src: ZNr69, title: '#69' },
+   { src: ZNr70, title: '#70' },
+   { src: ZNr71, title: '#71' },
+   { src: ZNr72, title: '#72' },
+   { src: ZNr73, title: '#73' },
+   { src: ZNr74, title: '#74' },
+   { src: ZNr75, title: '#75' },
+   { src: ZNr76, title: '#76' },
+   { src: ZNr77, title: '#77' },
+   { src: ZNr78, title: '#78' },
+   { src: ZNr79, title: '#79' },
+   { src: ZNr80, title: '#80' },
+   { src: ZNr81, title: '#81' },
+   { src: ZNr82, title: '#82' },
+   { src: ZNr83, title: '#83' },
+   { src: ZNr84, title: '#84' },
+   { src: ZNr85, title: '#85' },
+   { src: ZNr86, title: '#86' },
+   { src: ZNr87, title: '#87' },
+   { src: ZNr88, title: '#88' },
+   { src: ZNr89, title: '#89' },
+   { src: ZNr90, title: '#90' },
+   { src: ZNr91, title: '#91' },
+   { src: ZNr92, title: '#92' },
+   { src: ZNr93, title: '#93' },
+   { src: ZNr94, title: '#94' },
+   { src: ZNr95, title: '#95' },
+   { src: ZNr96, title: '#96' },
+   { src: ZNr97, title: '#97' },
+   { src: ZNr98, title: '#98' },
+   { src: ZNr99, title: '#99' },
+   { src: ZNr100, title: '#100' },
+   { src: ZNr101, title: '#101' },
+   { src: ZNr102, title: '#102' }
+ ]
+
+
   const introGallery = [
     { src: Nr82, title: '#82' },
     { src: Nr83, title: '#83' },
@@ -295,6 +499,7 @@ export default function ImageHelper() {
     winterGallery,
     abstractGallery,
     otherGallery,
-    NanaProfil
+    NanaProfil,
+    zivotGallery
   }
 }

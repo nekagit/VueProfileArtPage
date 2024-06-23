@@ -38,7 +38,7 @@
           <div class="text-sm">
             <a
               href="https://serbianaart.rs/umetnik/stankovic-dragoslava-dragica"
-              class="text-blueGray-500 hover:text-gray-800"
+              class="text-blueGray-500 hover:text-gray-800 w-[50%]"
               target="_blank"
             >
               SerbianaArt</a
@@ -79,7 +79,7 @@ import ImageHelper from '@/services/ImageHelper'
 
 <style scoped>
 .background-image {
-  max-width: 70vw;
+  max-width: 40vw;
   height: auto;
   margin: auto;
   background-size: contain;
@@ -94,8 +94,8 @@ import ImageHelper from '@/services/ImageHelper'
 }
 
 .background-image2 {
-  max-width: 42vw;
-  height: 21vh;
+  max-width: 20vw;
+  height: auto;
   margin: auto;
   background-size: contain;
   background-position: center bottom;

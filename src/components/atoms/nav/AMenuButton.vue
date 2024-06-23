@@ -5,8 +5,8 @@
   <nav class="menu" :class="{ open: isMenuOpen }">
     <ul>
       <li><RouterLink @click="closeMenu" to="/">Home</RouterLink></li>
-      <li><RouterLink @click="closeMenu" to="/gallery">Gallery</RouterLink></li>
-      <li><RouterLink @click="closeMenu" to="/artworks">Artworks</RouterLink></li>
+      <li><RouterLink @click="closeMenu" to="/gallery">Artworks</RouterLink></li>
+      <li><RouterLink @click="closeMenu" to="/artworks">Gallery</RouterLink></li>
       <li><RouterLink @click="closeMenu" to="/bio">Biography</RouterLink></li>
       <li><RouterLink @click="closeMenu" to="/overview">Overview</RouterLink></li>
       <li><RouterLink @click="closeMenu" to="/contact">Contact</RouterLink></li>

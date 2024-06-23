@@ -34,33 +34,33 @@
       </div>
     </div>
 
-    <form class="space-y-4 flex flex-col">
+    <form class="space-y-4 flex flex-col" @submit.prevent="sendEmail">
       <input
-        v-model="name"
+        v-model="form.name"
         type="text"
         placeholder="Name"
         class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
       />
       <input
-        v-model="customerEmail"
+        v-model="form.email"
         type="email"
         placeholder="Email"
         class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
       />
       <input
-        v-model="subject"
+        v-model="form.subject"
         type="text"
         placeholder="Subject"
         class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
       />
       <textarea
-        v-model="message"
+        v-model="form.message"
         placeholder="Message"
         rows="6"
         class="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"
       ></textarea>
       <button
-        @click="sendMessage"
+        type="submit"
         class="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full"
       >
         Send
@@ -68,23 +68,43 @@
     </form>
   </div>
 </template>
+
 <script setup lang="ts">
 import { ref } from 'vue'
+import emailjs from 'emailjs-com'
 
-const props = defineProps({
-  title: String,
-  subtitle: String,
-  email: String
+// Define props
+defineProps<{
+  title: string;
+  subtitle: string;
+  email: string;
+}>()
+
+// Reactive form data
+const form = ref({
+  name: '',
+  email: '',
+  subject: '',
+  message: ''
 })
 
-const name = ref('')
-const customerEmail = ref('')
-const subject = ref('')
-const message = ref('')
+// Send email function
+const sendEmail = () => {
+  const serviceID = 'service_u51co4y'
+  const templateID = 'template_v0bhlzp'
 
-const emailLink = `mailto:${props.email}?subject=${encodeURIComponent(subject.value)}&body=${encodeURIComponent(message.value)}`
-
-const sendMessage = () => {
-  // Logic to send message
+  emailjs.send(serviceID, templateID, {
+    from_name: form.value.name,
+    from_email: form.value.email,
+    subject: form.value.subject,
+    message: form.value.message,
+  })
+  .then((response) => {
+    console.log('Email sent successfully!', response.status, response.text)
+  })
+  .catch((error) => {
+    console.error('Error sending email:', error)
+  })
 }
 </script>
+

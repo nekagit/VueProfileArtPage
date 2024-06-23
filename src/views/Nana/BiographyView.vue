@@ -30,7 +30,7 @@
           <div id="page-1" class="page">
             <h3>Moja Biografija</h3>
             <p>
-              Dragoslava Dragica Stanu, renomirana modna kreatorka i slikarka, nosi u svom radu
+              Dragoslava Dragica Stankovic, renomirana modna kreatorka i slikarka, nosi u svom radu
               tragove duboko ukorenjene ljubavi prema umetnosti, koju je nasledila od svog oca. Od
               ranog detinjstva bila je obučena da svoje modele i fantazije prenosi na platno, da
               vešto koristi sve delove i materijale, odražavajući njihovu lepotu kroz svoje

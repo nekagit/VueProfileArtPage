@@ -186,7 +186,6 @@ import ZNr88 from '@/assets/Nana/zivotGallery/88.jpg'
 import ZNr89 from '@/assets/Nana/zivotGallery/89.jpg'
 import ZNr90 from '@/assets/Nana/zivotGallery/90.jpg'
 import ZNr91 from '@/assets/Nana/zivotGallery/91.jpg'
-import ZNr92 from '@/assets/Nana/zivotGallery/92.jpg'
 import ZNr93 from '@/assets/Nana/zivotGallery/93.jpg'
 import ZNr94 from '@/assets/Nana/zivotGallery/94.jpg'
 import ZNr95 from '@/assets/Nana/zivotGallery/95.jpg'
@@ -196,7 +195,6 @@ import ZNr98 from '@/assets/Nana/zivotGallery/98.jpg'
 import ZNr99 from '@/assets/Nana/zivotGallery/99.jpg'
 import ZNr100 from '@/assets/Nana/zivotGallery/100.jpg'
 import ZNr101 from '@/assets/Nana/zivotGallery/101.jpg'
-import ZNr102 from '@/assets/Nana/zivotGallery/102.jpg'
 
 
 import Intro2 from '@/assets/Nana/introGallery/2.jpg'
@@ -398,7 +396,6 @@ export default function ImageHelper() {
    { src: ZNr89, title: '#89' },
    { src: ZNr90, title: '#90' },
    { src: ZNr91, title: '#91' },
-   { src: ZNr92, title: '#92' },
    { src: ZNr93, title: '#93' },
    { src: ZNr94, title: '#94' },
    { src: ZNr95, title: '#95' },
@@ -408,7 +405,6 @@ export default function ImageHelper() {
    { src: ZNr99, title: '#99' },
    { src: ZNr100, title: '#100' },
    { src: ZNr101, title: '#101' },
-   { src: ZNr102, title: '#102' }
  ]
 
 
